@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>Inicio</title>
+	<meta charset="utf-8">
+	<link href="Practica final css.css" rel="stylesheet" type="text/css">
+	<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date();
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Web made by: Yuvika Gupta. Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+	document.write("Web made by: Yuvika Gupta. Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	}
+</Script>
+
+</head>
+<body>
+	<div>
+		<center><img src="Banner.jpg" class="Imagenbanner"></center>
+		<h1 class="Banner">BTS</h1>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="botones">
+		<a href="index.html" class="Inicio">Inicio</a>
+		<a href="Integrantes.html" class="Integrantes">Integrantes</a>
+		<a href="Álbumes.html" class="Álbumes">Álbumes</a>
+		<a href="Merch.html" class="Merch">Merch</a>
+	</div>
+	<img src="BTS inicio.jpg" class="Imageninicio" border="10">
+	<div class="cuerpoinicio">
+		BTS (en hangul, 방탄소년단 /Bangtan Sonyeondan/) es un grupo surcoreano formado en Seúl en 2010, que debutó el 13 de junio de 2013 bajo la compañía Big Hit Entertainment (ahora forma parte de <a href="https://hybecorp.com/eng/main" class="sinsubrayar">Hybe).</a>Está compuesto por siete integrantes: <a href="Integrantes.html" class="sinsubrayar">Jin, Suga, J-Hope, RM, Jimin, V y Jungkook </a>, quienes son los que coescriben y coproducen la mayor parte de su material discográfico. A pesar de haber sido creado con un estilo principalmente hip hop, ha llegado a incorporar una gran variedad de géneros en su repertorio musical.
+	</div>
+	<hr>
+	<div class="Linkpagof">
+		<a href="https://ibighit.com/bts/eng/" class="Paginaoficial">Página web oficial</a>
+	</div>
+	
+		<h2 class="hora1"><script>DameLaFechaHora();</script></h2>
+	
+</body>
+</html>
+	

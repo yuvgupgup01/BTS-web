@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Merch</title>
+	<meta charset="utf-8">
+	<link href="Practica final css.css" rel="stylesheet" type="text/css">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25921988.083657257!2d126.96372969999999!3d37.5243026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1b1aecc69e7%3A0x4b924ec089ee3d88!2zSFlCRSBJTlNJR0hUICjtlZjsnbTruIwg7J247IKs7J207Yq4KQ!5e0!3m2!1ses!2ses!4v1670699780936!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="Mapa"></iframe>
+	<Script Language="JavaScript">
+	function DameLaFechaHora() {
+  	var hora = new Date();
+  	var hrs = hora.getHours();
+  	var min = hora.getMinutes();
+  	var hoy = new Date();
+  	var m = new Array();
+  	var d = new Array()
+  	var an= hoy.getYear();
+  	m[0]="Enero";  m[1]="Febrero";  m[2]="Marzo";
+  	m[3]="Abril";   m[4]="Mayo";  m[5]="Junio";
+  	m[6]="Julio";	m[7]="Agosto";   m[8]="Septiembre";
+  	m[9]="Octubre";   m[10]="Noviembre"; m[11]="Diciembre";
+	
+	if (min<10){
+  	document.write("Web made by: Yuvika Gupta. Son las "+hrs+":0"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	
+	else{
+	document.write("Web made by: Yuvika Gupta. Son las "+hrs+":"+min+" (");
+  	document.write(hoy.getDate());
+  	document.write(" de ");
+  	document.write(m[hoy.getMonth()]);
+  	document.write(")");
+	}
+	}
+</Script>
+</head>
+<body>
+	<div>
+		<center><img src="Banner.jpg" class="Imagenbanner"></center>
+		<h1 class="Banner">BTS</h1>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="botones">
+		<a href="index.html" class="Inicio">Inicio</a>
+		<a href="Integrantes.html" class="Integrantes">Integrantes</a>
+		<a href="Álbumes.html" class="Álbumes">Álbumes</a>
+		<a href="Merch.html" class="Merch">Merch</a>
+	</div>
+	<div>
+		<h1 class="Contacto">CONTACTO</h1>
+		<hr class="barraContacto">
+		<h2 class="h2">¿Quieres comprar merchandising oficial de BTS?</h2><br><h2 class="h21"><a href="https://www.instagram.com/weverseofficial/?hl=es" class="insta">Weverse Shop</a></h2>
+		<a href="https://www.instagram.com/weverseofficial/?hl=es"><img src="Weverse.jpg" class="Weverse" border="5"></a>
+	</div>
+	<fieldset>
+		<legend>Pedido</legend>
+		<p>Productos:<br>
+		<input type="checkbox" name="Lightstick">Lightstick<br>
+		<input type="checkbox" name="Sudadera">Sudadera. Especificar modelo: <input type="text" name="Sudadera" size="30"><br>
+		<input type="checkbox" name="Libro">Libro<br>
+		<input type="checkbox" name="Agenda">Agenda 2023<br>
+		<input type="checkbox" name="Album">Album. Especificar album: <input type="text" name="Album" size="30"><br>
+		<input type="checkbox" name="Material">Pack material escolar<br>
+		<input type="checkbox" name="Joyas">Pack de joyería<br>
+		<input type="checkbox" name="Póster">Póster. Especificar el álbum al que pertenece: <input type="text" name="Póster" size="20"><br>
+	</p>
+	<p>Datos de entrega:<br>
+		Nombre:<input type="text" name="Nombre" size="15"><br>
+		Apellidos:<input type="text" name="Apellidos" size="15"><br>
+		DNI:<input type="text" name="DNI" size="15"><br>
+		País:<input type="text" name="País" size="15"><br>
+		Provincia:<input type="text" name="Provincia" size="15"><br>
+		Portal:<input type="text" name="Portal" size="15"><br>
+		Piso y puerta:<input type="text" name="Piso y puerta" size="15"><br>
+		Código postal:<input type="text" name="Código postal" size="15"><br>
+		Número tarjeta<input type="text" name="Nº Tarjeta" size="15"><br>
+		Fecha de caducidad:<input type="date" name="Fecha caducidad">
+	</p>
+	<input type="submit" value="Enviar">
+	</fieldset>
+    <h2 class="hora4"><script>DameLaFechaHora();</script></h2>
